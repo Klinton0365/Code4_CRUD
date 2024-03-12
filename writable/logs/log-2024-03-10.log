@@ -1,0 +1,1412 @@
+ERROR - 2024-03-10 03:28:49 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 03:28:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 03:29:09 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 03:29:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 03:29:57 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 03:29:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 03:29:58 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 03:29:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 03:32:08 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 03:32:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 03:40:11 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 03:40:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 03:40:38 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 03:40:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 03:48:33 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 03:48:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 03:51:01 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 03:51:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 03:55:12 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 03:55:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(12): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 04:09:19 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(13): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(13): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 04:09:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(13): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 04:09:20 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(13): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(13): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 04:09:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(13): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 04:09:39 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(13): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(13): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 04:09:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(13): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 04:13:24 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(13): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(13): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 04:13:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(13): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 04:13:41 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(13): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(13): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 04:13:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(13): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 04:18:06 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 04:18:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 04:18:08 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 04:18:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 04:42:31 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 04:42:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 04:43:43 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 04:43:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 04:47:47 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 04:47:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 04:47:49 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 04:47:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 04:48:33 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(14): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(14): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 04:48:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blog`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(14): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 06:07:06 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 06:07:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `code_red`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(11): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 06:08:32 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 06:08:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `code_red`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(11): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 06:10:15 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 06:10:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `code_red`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(11): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+ERROR - 2024-03-10 06:10:17 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'code_red', 3306, '', 0)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#10 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'code_red' in C:\xampp\htdocs\Code4_CRUD\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Code4_CRUD\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Code4_CRUD\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Code4_CRUD\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\Code4_CRUD\app\Models\BlogModel.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\Code4_CRUD\app\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+#7 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(941): App\Controllers\BlogController->index()
+#8 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+#9 C:\xampp\htdocs\Code4_CRUD\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Code4_CRUD\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\Code4_CRUD\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-03-10 06:10:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'code_red'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `code_red`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\BlogModel.php(11): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\BlogController.php(18): App\Models\BlogModel->getBlogs()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 13:54:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 13:54:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 13:54:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 13:56:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 13:58:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 13:59:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 14:01:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 14:02:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 14:03:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 14:32:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 14:34:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 14:40:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 14:41:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 14:41:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 14:41:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 14:42:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 14:43:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 14:45:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
+CRITICAL - 2024-03-10 14:50:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "code_red.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('code_red.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('code_red', [], true)
+ 3 APPPATH\Controllers\BlogController.php(18): view('code_red', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BlogController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BlogController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(82): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\Code4_CRUD\\public\\index.php')
